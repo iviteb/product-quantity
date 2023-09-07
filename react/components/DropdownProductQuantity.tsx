@@ -20,6 +20,7 @@ interface DropdownProps {
   availableQuantity: number
   onChange: (e: OnChangeCallback) => void
   size: BaseProps['size']
+  minQuantity: number
 }
 
 type InternalBehavior = 'dropdown' | 'input'
@@ -78,6 +79,7 @@ const DropdownProductQuantity: FunctionComponent<DropdownProps> = ({
   size = 'small',
   onChange,
   availableQuantity,
+  minQuantity,
 }) => {
   const [internalBehavior, setInternalBehavior] = useState<InternalBehavior>(
     'dropdown'
@@ -88,6 +90,10 @@ const DropdownProductQuantity: FunctionComponent<DropdownProps> = ({
   const dropdownOptions = getDropdownOptions(availableQuantity)
 
   const handleChange = (value: string) => {
+    if (Number(value) < minQuantity) {
+      return
+    }
+
     const newValidatedValue = validateValue(value, availableQuantity)
     const newDisplayValue = validateDisplayValue(value, availableQuantity)
 
