@@ -55,7 +55,7 @@ const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
   const handles = useCssHandles(CSS_HANDLES)
   const { product } = useProduct()
 
-  const minQuantity = product?.properties?.find((prop: Property) => prop?.name === MIN_QUANTITY)?.values[0]
+  const minQuantity = product?.properties?.find((prop: Property) => prop?.name === MIN_QUANTITY)?.values[0] ?? 1
 
   useEffect(() => {
     if (isNaN(minQuantity)) {
@@ -109,6 +109,7 @@ const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
           selectedQuantity={selectedQuantity}
           availableQuantity={availableQuantity}
           onChange={onChange}
+          minQuantity={minQuantity}
         />
       )}
       {selectorType === 'dropdown' && (
