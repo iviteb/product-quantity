@@ -19,21 +19,7 @@
     "vtex.product-context": "0.x",
     "vtex.product-summary-context": "0.x",
     "vtex.css-handles": "0.x",
-    "vtex.device-detector": "0.x",
-    "vtex.apps-graphql": "3.x"
-  },
-  "settingsSchema": {
-    "title": "Product Quantity",
-    "type": "object",
-    "access": "public",
-    "properties": {
-      "minQuantityName": {
-        "title": "Min Quantity Specification Name",
-        "description": "Must be the same as the one used in Admin specification configuration",
-        "type": "string",
-        "default": "minQuantity"
-      }
-    }
+    "vtex.device-detector": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

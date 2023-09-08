@@ -1,8 +1,0 @@
-query appSettings {
-  publicSettingsForApp(
-    app: "dacris.product-quantity"
-    version: "0.x"
-  ) @context(provider: "vtex.apps-graphql") {
-    message
-  }
-}
