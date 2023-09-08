@@ -28,11 +28,11 @@ type InternalBehavior = 'dropdown' | 'input'
 const normalizeValue = (value: number, maxValue: number) =>
   value > maxValue ? maxValue : value
 
-const validateValue = (value: string, maxValue: number) => {
+const validateValue = (minQuantity: number, value: string, maxValue: number) => {
   const parsedValue = parseInt(value, 10)
 
   if (Number.isNaN(parsedValue)) {
-    return 1
+    return minQuantity
   }
 
   return normalizeValue(parseInt(value, 10), maxValue)
@@ -48,12 +48,12 @@ const validateDisplayValue = (value: string, maxValue: number) => {
   return `${normalizeValue(parsedValue, maxValue)}`
 }
 
-const getDropdownOptions = (maxValue: number) => {
+const getDropdownOptions = (minQuantity: number, maxValue: number) => {
   const limit = Math.min(MAX_DROPDOWN_VALUE - 1, maxValue)
   const options = []
 
-  for (let idx = 1; idx <= limit; ++idx) {
-    options.push({ value: idx, label: `${idx}` })
+  for (let idx = minQuantity; idx <= limit; ++idx) {
+    options.push({ value: Number(idx), label: `${idx}` })
   }
 
   if (maxValue >= MAX_DROPDOWN_VALUE) {
@@ -87,14 +87,14 @@ const DropdownProductQuantity: FunctionComponent<DropdownProps> = ({
   const [displayValue, setDisplayValue] = useState(`${selectedQuantity}`)
   const { isMobile } = useDevice()
   const handles = useCssHandles(CSS_HANDLES)
-  const dropdownOptions = getDropdownOptions(availableQuantity)
+  const dropdownOptions = getDropdownOptions(minQuantity, availableQuantity)
 
   const handleChange = (value: string) => {
     if (Number(value) < minQuantity) {
       return
     }
 
-    const newValidatedValue = validateValue(value, availableQuantity)
+    const newValidatedValue = validateValue(minQuantity, value, availableQuantity)
     const newDisplayValue = validateDisplayValue(value, availableQuantity)
 
     if (
@@ -110,10 +110,10 @@ const DropdownProductQuantity: FunctionComponent<DropdownProps> = ({
 
   const handleInputBlur = () => {
     if (displayValue === '') {
-      setDisplayValue('1')
+      setDisplayValue(String(minQuantity))
     }
 
-    const validatedValue = validateValue(displayValue, availableQuantity)
+    const validatedValue = validateValue(minQuantity, displayValue, availableQuantity)
 
     if (validatedValue < Math.min(availableQuantity, MAX_DROPDOWN_VALUE)) {
       setInternalBehavior('dropdown')
