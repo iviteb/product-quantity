@@ -10,7 +10,7 @@ The Product Quantity allows users to a add a chosen amount of the displayed prod
 
 ```json
   "dependencies": {
-    "dacris.product-quantity": "1.x"
+    "dacris.product-quantity": "0.x"
   }
 ```
 
