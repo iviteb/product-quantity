@@ -58,7 +58,7 @@ const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
   const minQuantity = product?.properties?.find((prop: Property) => prop?.name === MIN_QUANTITY)?.values[0] ?? 1
 
   useEffect(() => {
-    if (isNaN(minQuantity)) {
+    if (isNaN(minQuantity) || minQuantity === 1) {
       return
     }
 
