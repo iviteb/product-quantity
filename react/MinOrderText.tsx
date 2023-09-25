@@ -1,5 +1,5 @@
 import { useProduct } from "vtex.product-context"
-import { MIN_QUANTITY } from './utils/constants'
+import { MIN_QUANTITY_SPECIFICATION_NAME } from './utils/constants'
 import React from "react"
 import { useIntl, defineMessages } from 'react-intl'
 import { useCssHandles } from "vtex.css-handles"
@@ -21,7 +21,7 @@ const MinOrderText = () => {
   const { formatMessage } = useIntl()
   const handles = useCssHandles(CSS_HANDLES)
 
-  const minQuantity = product?.properties?.find((prop: Property) => prop?.name === MIN_QUANTITY)?.values[0] ?? 1
+  const minQuantity = product?.properties?.find((prop: ProductSpecification) => prop?.name === MIN_QUANTITY_SPECIFICATION_NAME)?.values[0] ?? 1
 
   if (minQuantity > 1) {
     return <div className={handles.minQuantityContainer}>

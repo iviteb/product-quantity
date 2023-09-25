@@ -7,7 +7,7 @@ import { ProductContext } from 'vtex.product-context'
 import DropdownProductQuantity from './DropdownProductQuantity'
 import StepperProductQuantity from './StepperProductQuantity'
 import { useProduct } from 'vtex.product-context'
-import { MIN_QUANTITY } from '../utils/constants'
+import { MIN_QUANTITY_SPECIFICATION_NAME } from '../utils/constants'
 
 export type NumericSize = 'small' | 'regular' | 'large'
 export type SelectorType = 'stepper' | 'dropdown'
@@ -49,7 +49,7 @@ const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
   const handles = useCssHandles(CSS_HANDLES)
   const { product } = useProduct()
 
-  const minQuantity = product?.properties?.find((prop: Property) => prop?.name === MIN_QUANTITY)?.values[0] ?? 1
+  const minQuantity = product?.properties?.find((prop: ProductSpecification) => prop?.name === MIN_QUANTITY_SPECIFICATION_NAME)?.values[0] ?? 1
 
   useEffect(() => {
     if (isNaN(minQuantity) || minQuantity === 1) {

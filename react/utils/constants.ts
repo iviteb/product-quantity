@@ -1,1 +1,1 @@
-export const MIN_QUANTITY = 'minQuantity'
+export const MIN_QUANTITY_SPECIFICATION_NAME = 'minQuantity'
