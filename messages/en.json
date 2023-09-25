@@ -6,5 +6,7 @@
   "admin/editor.product-quantity.warningQuantityThreshold.title": "Threshold for available quantity warning",
   "admin/editor.product-quantity.warningQuantityThreshold.description": "Only show the quantity of remaining items in stock if available item quantity is less than or equal to the value passed in this property",
   "admin/editor.product-quantity.showUnit.title": "Unit of measure in quantity selector",
-  "admin/editor.product-quantity.showUnit.description": "Show or hide unit of measure in quantity selector"
+  "admin/editor.product-quantity.showUnit.description": "Show or hide unit of measure in quantity selector",
+  "store/product-quantity.minQuantity": "Minimum order from",
+  "store/product-quantity.pieces": "pieces"
 }
