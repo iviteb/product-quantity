@@ -6,5 +6,7 @@
   "admin/editor.product-quantity.warningQuantityThreshold.title": "Title of warningQuantityThreshold property",
   "admin/editor.product-quantity.warningQuantityThreshold.description": "Description of warningQuantityThreshold property",
   "admin/editor.product-quantity.showUnit.title": "Title of showUnit property",
-  "admin/editor.product-quantity.showUnit.description": "Description of showUnit property"
+  "admin/editor.product-quantity.showUnit.description": "Description of showUnit property",
+  "store/product-quantity.minQuantity": "Minimum order from",
+  "store/product-quantity.pieces": "pieces"
 }

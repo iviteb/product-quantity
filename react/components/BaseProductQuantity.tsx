@@ -7,6 +7,7 @@ import { ProductContext } from 'vtex.product-context'
 import DropdownProductQuantity from './DropdownProductQuantity'
 import StepperProductQuantity from './StepperProductQuantity'
 import { useProduct } from 'vtex.product-context'
+import { MIN_QUANTITY } from '../utils/constants'
 
 export type NumericSize = 'small' | 'regular' | 'large'
 export type SelectorType = 'stepper' | 'dropdown'
@@ -34,18 +35,11 @@ export type OnChangeCallback = {
   value: number
 }
 
-type Property = {
-  name: string
-  values: string[]
-}
-
-const MIN_QUANTITY = 'minQuantity'
-
 const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
   dispatch,
   selectedItem,
   size = 'small',
-  showLabel = true,
+  showLabel = false,
   selectedQuantity,
   warningQuantityThreshold = 0,
   selectorType = 'stepper',
@@ -93,7 +87,7 @@ const BaseProductQuantity: StorefrontFunctionComponent<BaseProps> = ({
 
   return (
     <div
-      className={`${handles.quantitySelectorContainer} flex flex-column mb4`}>
+      className={`${handles.quantitySelectorContainer} flex flex-column`}>
       {showLabel && (
         <div
           className={`${handles.quantitySelectorTitle} mb3 c-muted-2 t-body`}>
