@@ -4470,29 +4470,29 @@ verror@1.10.0:
   version "0.4.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles#8c45c6decf9acd2b944e07261686decff93d6422"
 
-"vtex.device-detector@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.5/public/@types/vtex.device-detector":
-  version "0.2.5"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.5/public/@types/vtex.device-detector#edbc992ee63c728664e67bd165af56cedd17a6c4"
+"vtex.device-detector@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector":
+  version "0.2.6"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector#3219242fa5c2f14023d33c3549c2d8de93c76d1f"
 
-"vtex.native-types@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types":
-  version "0.7.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types#a197484a2fdcee5c61a6d20ad6c994faa58380f5"
+"vtex.native-types@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.10.1/public/@types/vtex.native-types":
+  version "0.10.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.10.1/public/@types/vtex.native-types#7ddf7f34265f8902dfad93d3a13021108023a584"
 
-"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.9.2/public/@types/vtex.product-context":
-  version "0.9.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.9.2/public/@types/vtex.product-context#f4387e4b4ec59cf7e63b8f68202426a279693dd1"
+"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
+  version "0.10.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context#c5e2a97b404004681ee12f4fff7e6b62157786cc"
 
-"vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.5.0/public/@types/vtex.product-summary-context":
-  version "0.5.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.5.0/public/@types/vtex.product-summary-context#51e4062e3d6f39a1b376416a75fd7bf296c1c085"
+"vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context":
+  version "0.9.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context#44c411f37e19c220921ec5af640900b6f95c1d06"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.122.2/public/@types/vtex.render-runtime":
-  version "8.122.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.122.2/public/@types/vtex.render-runtime#fa235be2fa6995d12f03f92b20dd3eebb4f3c5fb"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.0/public/@types/vtex.render-runtime":
+  version "8.134.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.0/public/@types/vtex.render-runtime#ee5a73993a75e45de60ccceac1ef74ab6b9202a3"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.133.0/public/@types/vtex.styleguide":
-  version "9.133.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.133.0/public/@types/vtex.styleguide#1afb6bfeceee829a24d18afb672f1f05d64638ac"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide":
+  version "9.146.9"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide#d1601fedfb665c6173334753171717da64e670bc"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

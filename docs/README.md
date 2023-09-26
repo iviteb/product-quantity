@@ -1,10 +1,4 @@
-📢 Don't fork this project. Use, [contribute](https://github.com/vtex-apps/product-quantity), or open issues through [Store Discussion](https://github.com/vtex-apps/store-discussion).
-
-# Product Quantity
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+# Dacris - Product Quantity
 
 The Product Quantity allows users to a add a chosen amount of the displayed product in their cart.
 
@@ -16,7 +10,7 @@ The Product Quantity allows users to a add a chosen amount of the displayed prod
 
 ```json
   "dependencies": {
-    "vtex.product-quantity": "1.x"
+    "dacris.product-quantity": "0.x"
   }
 ```
 
@@ -57,6 +51,10 @@ You are now able to use all blocks that are exported by the Product Quantity app
 
 *In the example above a Product Details Page is built using Flex Layout and the `product-quantity` block.*
 
+3. Minimum Quantity - If a product has a `minQuantity` specification defined, where `minQuantity` is a number, then 
+the product quantity selector will start from that quantity amount, which is the minimum amount required to 
+add to cart. 
+
 ### `product-quantity` and `product-summary-quantity` props
 
 | Prop name | Type | Description | Default Value |
@@ -83,27 +81,3 @@ In order to apply CSS customizations in this and other blocks, follow the instru
 | `quantitySelectorStepper`                  |
 | `quantitySelectorTitle`                    |
 | `summaryContainer`                         |
-
-<!-- DOCS-IGNORE:start -->
-
-## Contributors ✨
-
-Thanks goes to these wonderful people:
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/regis-samurai"><img src="https://avatars0.githubusercontent.com/u/38638226?v=4" width="100px;" alt=""/><br /><sub><b>Reginaldo</b></sub></a><br /><a href="https://github.com/vtex-apps/product-quantity/commits?author=regis-samurai" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
-
-<!-- DOCS-IGNORE:end -->
-
